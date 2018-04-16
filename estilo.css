@@ -19,7 +19,6 @@ body{
 	/* fixa as imagens do background */
 	background-attachment: fixed;
 	font-family: Helvetica, Arial, sans-serif;
-
 	/* remover a barra de rolagem horizontal gerada pela rotação dos iphones */
 	overflow-x: hidden;
 }
@@ -59,12 +58,13 @@ nav.navbar-transparente{
 /* selecionando o link da mesma forma que o bootstrap seleciona
 	botão direito em cima do link > inspecionar elemento
 	faremos a configuração igual a do site oficial Spotify */
-.navbar-inverse .navbar-nav>li>a{
+.navbar-inverse .navbar-nav>li>a, footer .nav a{
 	color: white;
 }
 
-.navbar-inverse .navbar-nav>li>a:hover{
+.navbar-inverse .navbar-nav>li>a:hover, footer .nav a:hover{
 	color: #9bf0e1;
+	background: none;
 }
 
 /* ----------- Imagem da capa principal ----------- */
@@ -139,6 +139,17 @@ nav.navbar-transparente{
 	padding-left: 80px;
 }
 
+/* --------------- Seção de rodapé --------------- */
+footer{
+	background: black;
+	padding: 50px 0px 20px 0px;
+	/* deixar o rodapé por cima da img do iphone */
+	position: relative;
+}
+
+.item-rede-social{
+	float: right;
+}
 
 /* ========================== Tipografia ======================== */
 /* A cor não será inserida nos títulos por aqui, pois eles serão utilizados
@@ -162,6 +173,12 @@ h3{
 	font-size: 35px;
 	font-weight: 700;
 	letter-spacing: -0.04em;
+}
+
+#rodape h4 {
+	color: #919496;
+	font-size: 12px;
+	text-transform: uppercase;
 }
 
 /* formatação apenas do h2 e h3 que estão dentro do ID serviços*/
