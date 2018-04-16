@@ -19,6 +19,9 @@ body{
 	/* fixa as imagens do background */
 	background-attachment: fixed;
 	font-family: Helvetica, Arial, sans-serif;
+
+	/* remover a barra de rolagem horizontal gerada pela rotação dos iphones */
+	overflow-x: hidden;
 }
 
 /* ----------- Barra de navegação ----------- */
@@ -120,6 +123,23 @@ nav.navbar-transparente{
 	padding: 10px 0px 10px 0px; 
 }
 
+/* -------------- Seção de recursos -------------- */
+#recursos{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: white;
+}
+
+/* rotação das imagens dos iphones */
+.rotacionar{
+	transform: rotate(30deg);
+	/* compatibilidade com navegadores */
+	-ms-transform: rotate(30deg); /* IE 9 */
+	-webkit-transform: rotate(30deg); /* Chrome, Safari, Opera */
+	padding-left: 80px;
+}
+
+
 /* ========================== Tipografia ======================== */
 /* A cor não será inserida nos títulos por aqui, pois eles serão utilizados
 em mais locais no site. As cores terão classes correspondentes. */
@@ -147,4 +167,8 @@ h3{
 /* formatação apenas do h2 e h3 que estão dentro do ID serviços*/
 #servicos h2, #servicos h3{
 	color: #7c25f8;
+}
+
+#recursos h3{
+	color: #9bf0e1;
 }
