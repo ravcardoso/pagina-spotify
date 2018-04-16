@@ -1,0 +1,51 @@
+/*
+* @authoress Roze Anne da Vitória Cardoso
+* @2018
+*/
+
+/* =========================== Layout =========================== */
+
+/* ----------- Barra de navegação ----------- */
+.img-logo{
+	height: 40px;
+	width: 132px;
+	display: block;
+	background: url('imagens/spotify.svg') no-repeat;
+	background-size: contain; /* deixa a img de fundo do mesmo tamanho
+								definido anteriormente */
+	color: transparent; /* deixa o texto Spotify transparente.
+						É importante deixar o texto para os leitores de tela */
+}
+
+/* selecionar a classe 'navbar-transparente' dentro da barra de navegação 'nav' */
+nav.navbar-transparente{
+	padding: 15px 0px;
+	background: rgba(0, 0, 0, 0.6);
+	border: none;
+}
+
+/* sobrescrevendo as configurações padrão dessa classe */
+.navbar-brand{
+	padding: 5px 15px;
+}
+
+/* configurando o divisor dos menus */
+.divisor{
+	width: 1px;
+	height: 16px;
+	background: white;
+	margin: 16px 10px;
+}
+
+/* selecionando o link da mesma forma que o bootstrap seleciona
+	botão direito em cima do link > inspecionar elemento
+	faremos a configuração igual a do site oficial Spotify */
+.navbar-inverse .navbar-nav>li>a{
+	color: white;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover{
+	color: #9bf0e1;
+}
+
+/* ========================== Tipografia ======================== */
