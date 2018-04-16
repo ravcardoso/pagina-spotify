@@ -109,11 +109,42 @@ nav.navbar-transparente{
 	color: black;
 }
 
+/* -------------- Seção de serviços -------------- */
+#servicos{
+	background: white;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.albuns{
+	padding: 10px 0px 10px 0px; 
+}
+
 /* ========================== Tipografia ======================== */
+/* A cor não será inserida nos títulos por aqui, pois eles serão utilizados
+em mais locais no site. As cores terão classes correspondentes. */
+
 h1{
 	font-size: 100px;
 	font-weight: 900;
 	/* formatação do espaçamento das letras */
 	letter-spacing: -0.05em;
 	margin-bottom: 50px;
+}
+
+h2{
+	font-size: 50px;
+	font-weight: 700;
+	letter-spacing: -0.04em;
+}
+
+h3{
+	font-size: 35px;
+	font-weight: 700;
+	letter-spacing: -0.04em;
+}
+
+/* formatação apenas do h2 e h3 que estão dentro do ID serviços*/
+#servicos h2, #servicos h3{
+	color: #7c25f8;
 }
