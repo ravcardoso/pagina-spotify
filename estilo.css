@@ -9,6 +9,7 @@
 /* conteúdo do html, do body e da classe capa ocupando 100% da tela */
 html, body, .capa{
 	height: 100%;
+	overflow: auto;
 }
 
 body{
@@ -87,9 +88,7 @@ nav.navbar-transparente{
 	/* compatibilidade com navegadores antigos */
 	-webkit-border-radius: 500px;
 	-moz-border-radius: 500px;
-	padding: 10px 35px;
 	text-transform: uppercase;
-	margin: 0px 15px;
 	/* transição do botão pro modo hover */
 	transition: background 0.4s, color 0.4s;
 }
@@ -156,12 +155,44 @@ footer{
 em mais locais no site. As cores terão classes correspondentes. */
 
 h1{
-	font-size: 100px;
 	font-weight: 900;
 	/* formatação do espaçamento das letras */
 	letter-spacing: -0.05em;
 	margin-bottom: 50px;
 }
+
+/* Media queries para otimização da página */
+/* xs < 768 */
+@media screen and (max-width: 767px){
+	h1{
+	font-size: 50px;
+	}
+	.btn-custom{
+		margin: 10px 15px;
+	}
+}
+
+/* sm */
+@media screen and (min-width: 768px){
+	h1{
+	font-size: 70px;
+	}
+}
+
+/* md */
+@media screen and (min-width: 992px){
+	h1{
+	font-size: 80px;
+	}
+}
+
+/* lg */
+@media screen and (min-width: 1200px){
+	h1{
+	font-size: 100px;
+	}
+}
+/* Fim das medias queries */
 
 h2{
 	font-size: 50px;
